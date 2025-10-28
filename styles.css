@@ -135,6 +135,46 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+/* Updated Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.6rem;
+}
+
+.logo-text p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .logo-image {
+        height: 50px;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.4rem;
+    }
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%), 
