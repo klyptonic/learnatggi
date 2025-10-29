@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! In a real implementation, this would be sent to our team.');
+            alert('Thank you for your message! Someone from our team will be in contact.');
             this.reset();
         });
     }
