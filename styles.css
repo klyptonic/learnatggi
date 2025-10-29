@@ -951,7 +951,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Dropdown Menu Styles */
+/* Dropdown Menu Styles - Vertical Layout */
 .dropdown {
     position: relative;
 }
@@ -967,7 +967,6 @@ h1, h2, h3, h4, h5, h6 {
     top: 100%;
     left: 0;
     background: white;
-    min-width: 200px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     padding: 10px 0;
@@ -977,6 +976,10 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(10px);
     transition: all 0.3s ease;
     z-index: 1000;
+    /* Make width fit content */
+    width: fit-content;
+    min-width: 180px; /* Minimum width for usability */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .dropdown:hover .dropdown-menu {
@@ -987,6 +990,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-menu li {
     margin: 0;
+    width: 100%; /* Full width for each menu item */
 }
 
 .dropdown-menu a {
@@ -998,12 +1002,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     border-radius: 0;
     background: transparent;
+    width: 100%; /* Full width for hover effect */
+    text-align: left; /* Left-align text */
 }
 
 .dropdown-menu a:hover {
     background: rgba(102, 126, 234, 0.1);
     color: #667eea;
-    padding-left: 25px;
+    padding-left: 25px; /* Subtle shift on hover */
 }
 
 .dropdown-menu a i {
@@ -1026,6 +1032,9 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
         padding: 0;
         transition: max-height 0.3s ease;
+        width: 100%; /* Full width on mobile */
+        min-width: unset;
+        white-space: normal; /* Allow wrapping on mobile */
     }
     
     .dropdown.active .dropdown-menu {
@@ -1039,6 +1048,7 @@ h1, h2, h3, h4, h5, h6 {
     .dropdown-menu a {
         padding: 10px 30px;
         border-bottom: 1px solid #eee;
+        width: 100%;
     }
     
     .dropdown-menu a:hover {
