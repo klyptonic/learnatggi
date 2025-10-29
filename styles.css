@@ -670,3 +670,283 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
 }
+
+/* Academic Calendar Page Styles */
+
+/* Calendar Hero Section */
+.calendar-hero {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%), 
+                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=400&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.calendar-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.calendar-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Calendar Navigation */
+.calendar-nav {
+    background: white;
+    padding: 30px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.calendar-controls h2 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+.legend {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.legend-color.event { background: #667eea; }
+.legend-color.holiday { background: #ff6b6b; }
+.legend-color.exam { background: #4ecdc4; }
+.legend-color.deadline { background: #ffd93d; }
+
+/* Calendar Grid */
+.academic-calendar {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Month Card */
+.month-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.month-card:hover {
+    transform: translateY(-5px);
+}
+
+.month-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.month-header h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+}
+
+.month-year {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Calendar Days */
+.month-calendar {
+    padding: 20px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day-header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    padding: 8px 0;
+}
+
+.day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    background: #f8f9fa;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.day:hover:not(.empty) {
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+}
+
+.day.empty {
+    background: transparent;
+    cursor: default;
+}
+
+/* Month Events */
+.month-events {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.month-events h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.month-events ul {
+    list-style: none;
+}
+
+.event-item {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.event-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 8px;
+    color: white;
+}
+
+.event-badge.event { background: #667eea; }
+.event-badge.holiday { background: #ff6b6b; }
+.event-badge.exam { background: #4ecdc4; }
+.event-badge.deadline { background: #ffd93d; color: #333; }
+
+/* Calendar Download Section */
+.calendar-download {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-download h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.calendar-download p {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.download-buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .calendar-controls {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .calendar-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .calendar-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .calendar-hero p {
+        font-size: 1rem;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+    }
+    
+    .download-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .legend {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-hero {
+        padding: 60px 0;
+    }
+    
+    .month-card {
+        margin-bottom: 20px;
+    }
+    
+    .calendar-download {
+        padding: 30px 20px;
+    }
+    
+    .calendar-download h3 {
+        font-size: 1.5rem;
+    }
+}

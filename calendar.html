@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Calendar | Gordon Granger Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Gordon Granger Institute Logo" class="logo-image">
+            <!--<div class="logo-text">
+                    <h1>Gordon Granger <span>Institute</span></h1>
+                    <p>Excellence in Education Grades 9-12</p>
+                </div> -->
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#programs">Programs</a></li>
+                    <li><a href="index.html#admissions">Admissions</a></li>
+                    <li><a href="index.html#faculty">Faculty</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="calendar.html" class="active">Calendar</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Calendar Hero Section -->
+    <section class="calendar-hero">
+        <div class="container">
+            <h1>Academic Calendar 2024-2025</h1>
+            <p>Important dates, events, and deadlines for the upcoming academic year</p>
+        </div>
+    </section>
+
+    <!-- Calendar Navigation -->
+    <section class="calendar-nav">
+        <div class="container">
+            <div class="calendar-controls">
+                <button class="btn btn-secondary" id="prev-year"><i class="fas fa-chevron-left"></i> Previous Year</button>
+                <h2 id="current-year">2024-2025</h2>
+                <button class="btn btn-secondary" id="next-year">Next Year <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="legend">
+                <span class="legend-item"><span class="legend-color event"></span> Events</span>
+                <span class="legend-item"><span class="legend-color holiday"></span> Holidays</span>
+                <span class="legend-item"><span class="legend-color exam"></span> Exams</span>
+                <span class="legend-item"><span class="legend-color deadline"></span> Deadlines</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Calendar Grid -->
+    <section class="academic-calendar">
+        <div class="container">
+            <div class="calendar-grid">
+                <!-- September -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>September</h3>
+                        <span class="month-year">2024</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>September Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge event">Sep 3</span> First Day of School</li>
+                            <li class="event-item"><span class="event-badge exam">Sep 15</span> Placement Tests</li>
+                            <li class="event-item"><span class="event-badge deadline">Sep 30</span> Course Selection Deadline</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- October -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>October</h3>
+                        <span class="month-year">2024</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                            <div class="day empty"></div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>October Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge holiday">Oct 14</span> Columbus Day (No School)</li>
+                            <li class="event-item"><span class="event-badge exam">Oct 20-24</span> Midterm Exams</li>
+                            <li class="event-item"><span class="event-badge event">Oct 31</span> Halloween Spirit Day</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- November -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>November</h3>
+                        <span class="month-year">2024</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>November Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge holiday">Nov 11</span> Veterans Day (No School)</li>
+                            <li class="event-item"><span class="event-badge event">Nov 22</span> Thanksgiving Break Begins</li>
+                            <li class="event-item"><span class="event-badge deadline">Nov 15</span> College Application Workshop</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- December -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>December</h3>
+                        <span class="month-year">2024</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>December Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge exam">Dec 15-19</span> Final Exams</li>
+                            <li class="event-item"><span class="event-badge holiday">Dec 23-Jan 3</span> Winter Break</li>
+                            <li class="event-item"><span class="event-badge event">Dec 20</span> Holiday Concert</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- January -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>January</h3>
+                        <span class="month-year">2025</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                            <div class="day empty"></div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>January Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge holiday">Jan 1</span> New Year's Day (No School)</li>
+                            <li class="event-item"><span class="event-badge event">Jan 15</span> MLK Day (No School)</li>
+                            <li class="event-item"><span class="event-badge deadline">Jan 31</span> Q2 Grades Due</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- February -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>February</h3>
+                        <span class="month-year">2025</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day empty"></div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>February Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge holiday">Feb 17</span> Presidents' Day (No School)</li>
+                            <li class="event-item"><span class="event-badge exam">Feb 24-28</span> Midterm Exams</li>
+                            <li class="event-item"><span class="event-badge event">Feb 14</span> Valentine's Day Spirit Week</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- March -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>March</h3>
+                        <span class="month-year">2025</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            
+                            <!-- Week 6 -->
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>March Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge event">Mar 17</span> St. Patrick's Day</li>
+                            <li class="event-item"><span class="event-badge deadline">Mar 31</span> College Application Deadline</li>
+                            <li class="event-item"><span class="event-badge exam">Mar 10-14</span> Spring Break Makeup Classes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- April -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>April</h3>
+                        <span class="month-year">2025</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>April Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge holiday">Apr 18-22</span> Spring Break</li>
+                            <li class="event-item"><span class="event-badge exam">Apr 28-30</span> AP Exams</li>
+                            <li class="event-item"><span class="event-badge event">Apr 1</span> April Fools' Day</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- May -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>May</h3>
+                        <span class="month-year">2025</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>May Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge exam">May 12-23</span> Final Exams</li>
+                            <li class="event-item"><span class="event-badge event">May 30</span> Memorial Day (No School)</li>
+                            <li class="event-item"><span class="event-badge deadline">May 15</span> Senior Portraits Due</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- June -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>June</h3>
+                        <span class="month-year">2025</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>June Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge event">Jun 12</span> Graduation Ceremony</li>
+                            <li class="event-item"><span class="event-badge deadline">Jun 15</span> Last Day of School</li>
+                            <li class="event-item"><span class="event-badge event">Jun 20</span> Summer Programs Begin</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- July -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>July</h3>
+                        <span class="month-year">2025</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>July Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge event">Jul 4</span> Independence Day (No School)</li>
+                            <li class="event-item"><span class="event-badge deadline">Jul 15</span> Teacher Professional Development</li>
+                            <li class="event-item"><span class="event-badge event">Jul 28</span> New Student Orientation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- August -->
+                <div class="month-card">
+                    <div class="month-header">
+                        <h3>August</h3>
+                        <span class="month-year">2025</span>
+                    </div>
+                    <div class="month-calendar">
+                        <div class="calendar-days">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Week 1 -->
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day empty"></div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            
+                            <!-- Week 2 -->
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            
+                            <!-- Week 3 -->
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            
+                            <!-- Week 4 -->
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            
+                            <!-- Week 5 -->
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                        </div>
+                    </div>
+                    <div class="month-events">
+                        <h4>August Events:</h4>
+                        <ul>
+                            <li class="event-item"><span class="event-badge event">Aug 15</span> Faculty In-Service Day</li>
+                            <li class="event-item"><span class="event-badge deadline">Aug 20</span> Supply List Distribution</li>
+                            <li class="event-item"><span class="event-badge event">Aug 25</span> Open House</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Calendar -->
+            <div class="calendar-download">
+                <h3>Download Our Calendar</h3>
+                <p>Get the complete academic calendar in your preferred format</p>
+                <div class="download-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> PDF Version</a>
+                    <a href="#" class="btn btn-secondary"><i class="fas fa-calendar-alt"></i> Add to Google Calendar</a>
+                    <a href="#" class="btn btn-secondary"><i class="fas fa-download"></i> iCal Format</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gordon Granger Institute</h3>
+                    <p>Excellence in education for grades 9-12, preparing students for success in college and beyond.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#programs">Programs</a></li>
+                        <li><a href="index.html#admissions">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="calendar.html">Academic Calendar</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Parent Resources</a></li>
+                        <li><a href="#">Career Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gordon Granger Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
