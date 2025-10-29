@@ -951,7 +951,7 @@
                 <h3>Download Our Calendar</h3>
                 <p>Get the complete academic calendar in your preferred format</p>
                 <div class="download-buttons">
-                    <a href="#" class="btn btn-primary"><i class="fas fa-file-pdf"></i> PDF Version</a>
+                    <button class="btn btn-primary" onclick="exportCalendarToPDF()"><i class="fas fa-file-pdf"></i> PDF Version</button>
                     <a href="#" class="btn btn-secondary"><i class="fas fa-calendar-alt"></i> Add to Google Calendar</a>
                     <a href="#" class="btn btn-secondary"><i class="fas fa-download"></i> iCal Format</a>
                 </div>
@@ -998,6 +998,10 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
+    <!-- jsPDF Library for PDF Export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
