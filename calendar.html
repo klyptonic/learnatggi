@@ -14,8 +14,8 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="img/logo.png" alt="Gordon Granger Institute Logo" class="logo-image">
-            <!--<div class="logo-text">
+                <img src="images/logo.png" alt="Gordon Granger Institute Logo" class="logo-image">
+            <!-- <div class="logo-text">
                     <h1>Gordon Granger <span>Institute</span></h1>
                     <p>Excellence in Education Grades 9-12</p>
                 </div> -->
@@ -23,12 +23,17 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#about" class="dropdown-toggle">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#faculty">Our Faculty</a></li>
+                            <li><a href="calendar.html">Academic Calendar</a></li>
+                        </ul>
+                    </li>
                     <li><a href="index.html#programs">Programs</a></li>
                     <li><a href="index.html#admissions">Admissions</a></li>
-                    <li><a href="index.html#faculty">Faculty</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
-                    <li><a href="calendar.html" class="active">Calendar</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu-btn">
@@ -36,6 +41,7 @@
             </div>
         </div>
     </header>
+
     <!-- Calendar Hero Section -->
     <section class="calendar-hero">
         <div class="container">
